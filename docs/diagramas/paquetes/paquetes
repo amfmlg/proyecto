@@ -1,0 +1,9 @@
+@startuml
+package "com.proyectodam.biblioteca.dto" {
+    class CargaUsuario
+    class GestionGimnasio
+    class RegistroUsuario
+    class Rutina
+    class Usuario
+}
+@enduml

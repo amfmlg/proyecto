@@ -1,0 +1,31 @@
+@startuml
+!define table(x) class x << (T,#FFAAAA) >>
+
+table(ejerciciosMancuernas) {
+  + int id
+  + varchar nombre(50)
+  + int peso
+  + int repeticiones
+  + int tiempoTotal
+}
+
+table(Gimnasio) {
+  + int id_gimnasio
+  + int gastos
+  + int ingresos
+  + int cantidad_usuarios
+  + int empleados
+}
+
+table(Usuario) {
+  + int id
+  + varchar nombre(30)
+  + varchar contraseña(30)
+  + varchar correoElectronico(50)
+  + varchar fechaDeNacimiento(50)
+  + varchar peso(50)
+  + varchar altura(50)
+  + varchar frecuenciaDeEjercicio(50)
+}
+
+@enduml

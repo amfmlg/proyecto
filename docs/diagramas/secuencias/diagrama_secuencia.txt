@@ -1,0 +1,23 @@
+@startuml
+actor Usuario
+
+Usuario -> RegistroUsuario: registrar()
+activate RegistroUsuario
+RegistroUsuario -> Usuario: confirmación de registro
+deactivate RegistroUsuario
+
+Usuario -> CargaUsuario: agregarCarga()
+activate CargaUsuario
+CargaUsuario -> Usuario: confirmación de carga
+deactivate CargaUsuario
+
+Usuario -> GestionGimnasio: actualizarMembresia()
+activate GestionGimnasio
+GestionGimnasio -> Usuario: confirmación de actualización
+deactivate GestionGimnasio
+
+Usuario -> Rutina: actualizarRutina()
+activate Rutina
+Rutina -> Usuario: confirmación de rutina
+deactivate Rutina
+@enduml

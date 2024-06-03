@@ -1,0 +1,17 @@
+@startuml
+actor Usuario
+actor Administrador
+
+Usuario --> (Registrar Usuario)
+Usuario --> (Agregar Carga)
+Usuario --> (Actualizar Membresía)
+Usuario --> (Actualizar Rutina)
+
+Administrador --> (Gestionar Usuarios)
+Administrador --> (Gestionar Gimnasio)
+
+(Registrar Usuario) .> (Agregar Carga) : incluye
+(Registrar Usuario) .> (Actualizar Membresía) : incluye
+(Registrar Usuario) .> (Actualizar Rutina) : incluye
+
+@enduml
